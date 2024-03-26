@@ -1,1 +1,1 @@
-# SAR-and-DL-for-Landslide-Rapid-Assessment
+# SAR and DL for Landslide Rapid Assessment
