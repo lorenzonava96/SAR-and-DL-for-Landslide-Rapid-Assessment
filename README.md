@@ -10,4 +10,4 @@ Please note that this tool is currently in its beta version and will undergo con
 Contact emails: lorenava996@gmail.com
 
 ***SAR-LRA Tool***
-![SAR-LRA Tool](https://github.com/lorenzonava96/SAR-and-DL-for-Landslide-Rapid-Assessment/blob/main/Pictures/object%20detection.png)
+![SAR-LRA Tool](https://github.com/lorenzonava96/SAR-and-DL-for-Landslide-Rapid-Assessment/blob/main/object%20detection.png)
