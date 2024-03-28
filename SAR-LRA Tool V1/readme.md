@@ -15,3 +15,5 @@ NumPy version: 1.21.5;
 OpenCV version: 4.5.5;
 
 You can use 01_SAR-LRA_Sentinel-1_Image_Acquisition.ipynb to process and download the SAR imagery for a give event. Select the dates and digitise manually the Area of Interest. Default AoI and dates for the Sumatra event is available in the notebook for testing.
+
+The tool is effective in vegetated terrains. We don't garantee its functioning in presence of snow or in scarsely vegetated terrains.
