@@ -1,0 +1,18 @@
+model:
+  version: v2
+  orbit: ASCENDING
+  probability_threshold: 0.6
+  nms_overlap: 0.1
+  batch_size: 512
+
+imagery:
+  pre_days: 60
+  post_days: 12
+  scale_m: 10
+
+processing:
+  tile_size: 64
+  overlap: 0.5
+  max_roi_km2: 10000
+
+output_dir: outputs

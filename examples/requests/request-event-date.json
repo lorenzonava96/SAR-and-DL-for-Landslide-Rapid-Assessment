@@ -1,0 +1,40 @@
+{
+  "request_id": "hualien-2024-both",
+  "roi": {
+    "type": "geojson",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            121.45,
+            23.8
+          ],
+          [
+            121.8,
+            23.8
+          ],
+          [
+            121.8,
+            24.2
+          ],
+          [
+            121.45,
+            24.2
+          ],
+          [
+            121.45,
+            23.8
+          ]
+        ]
+      ]
+    }
+  },
+  "temporal": {
+    "mode": "event_date",
+    "event_date": "2024-04-03",
+    "pre_days": 30,
+    "post_days": 30
+  },
+  "orbit": "both"
+}

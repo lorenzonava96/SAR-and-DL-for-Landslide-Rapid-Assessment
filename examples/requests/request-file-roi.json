@@ -1,0 +1,19 @@
+{
+  "request_id": "roi-file-descending",
+  "roi": {
+    "type": "file",
+    "path": "/input/roi.gpkg",
+    "layer": "assessment_area"
+  },
+  "temporal": {
+    "mode": "event_date",
+    "event_date": "2018-09-28",
+    "pre_days": 24,
+    "post_days": 24
+  },
+  "orbit": "descending",
+  "output": {
+    "directory": "/output",
+    "vector_format": "geojson"
+  }
+}

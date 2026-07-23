@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sar-lra.example/schemas/result-metadata.schema.json",
+  "title": "SAR-LRA result metadata",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "request_id",
+    "status",
+    "started_at",
+    "finished_at",
+    "coordinate_reference_system",
+    "outputs",
+    "statistics",
+    "warnings"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "request_id": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "succeeded",
+        "succeeded_empty",
+        "failed"
+      ]
+    },
+    "started_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "finished_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "coordinate_reference_system": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "input",
+        "processing",
+        "vector_output",
+        "raster_output"
+      ],
+      "properties": {
+        "input": {
+          "type": "string"
+        },
+        "processing": {
+          "type": "string"
+        },
+        "vector_output": {
+          "const": "EPSG:4326"
+        },
+        "raster_output": {
+          "type": "string"
+        }
+      }
+    },
+    "outputs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "metadata"
+      ],
+      "properties": {
+        "detections_vector": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "detection_mask": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "probability_surface": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "metadata": {
+          "type": "string"
+        }
+      }
+    },
+    "statistics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "detected_feature_count",
+        "detected_area_m2"
+      ],
+      "properties": {
+        "detected_feature_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "detected_area_m2": {
+          "type": "number",
+          "minimum": 0
+        },
+        "probability_min": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "probability_max": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "error": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "code",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        },
+        "details": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

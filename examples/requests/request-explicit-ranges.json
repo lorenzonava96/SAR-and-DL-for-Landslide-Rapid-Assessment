@@ -1,0 +1,48 @@
+{
+  "request_id": "explicit-window-ascending",
+  "roi": {
+    "type": "geojson",
+    "geometry": {
+      "type": "MultiPolygon",
+      "coordinates": [
+        [
+          [
+            [
+              84.65,
+              28.1
+            ],
+            [
+              84.95,
+              28.1
+            ],
+            [
+              84.95,
+              28.4
+            ],
+            [
+              84.65,
+              28.4
+            ],
+            [
+              84.65,
+              28.1
+            ]
+          ]
+        ]
+      ]
+    }
+  },
+  "temporal": {
+    "mode": "explicit_ranges",
+    "pre_start": "2015-02-01",
+    "pre_end": "2015-04-24",
+    "post_start": "2015-04-25",
+    "post_end": "2015-06-30"
+  },
+  "orbit": "ascending",
+  "output": {
+    "vector_format": "gpkg",
+    "include_detection_mask": true,
+    "include_probability_surface": true
+  }
+}

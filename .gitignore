@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Runtime data and outputs
+deploy/
+predictions/
+outputs/
+work/
+cache/
+*.tif
+*.tiff
+*.shp
+*.shx
+*.dbf
+*.prj
+*.gpkg
+*.zip
+
+# Keep canonical model weights tracked intentionally
+!model/weights/*.hdf5
+
+# Local credentials
+.env
+*.service-account.json
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+.venv/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
